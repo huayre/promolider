@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="{{asset('plantilla\css\style.css')}}">
     <!-- endinject -->
     <link rel="shortcut icon" href="{{asset('plantilla\images\favicon.png')}}">
+    @toastr_css
 </head>
 <body>
     <div class="container-scroller">
@@ -62,5 +63,6 @@
     <!-- Custom js for this page-->
     <script src="{{asset('plantilla\js\dashboard.js')}}"></script>
     <!-- End custom js for this page-->
+    @toastr_js
 </body>
 </html>

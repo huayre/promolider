@@ -3,7 +3,7 @@
         <a class="navbar-brand brand-logo" href="index.html"><img src="{{asset('plantilla\images\logo.svg')}}" alt="logo"></a>
         <a class="navbar-brand brand-logo-mini" href="index.html"><img src="{{asset('plantilla\images\logo-mini.svg')}}" alt="logo"></a>
     </div>
-    <div class="navbar-menu-wrapper d-flex align-items-center">
+    <div class="navbar-menu-wrapper d-flex align-items-center" style="background-color: #0E0F0E ">
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
             <span class="icon-menu"></span>
         </button>
@@ -172,6 +172,50 @@
                 <a class="nav-link" href="#">
                     <i class="icon-grid"></i>
                 </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link " id="notificationDropdown" href="#" data-toggle="dropdown">
+                    <i class="fa fa-power-off mx-0 text-danger"></i>
+
+                    <span class="count"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                    <a class="dropdown-item">
+                        <p class="mb-0 font-weight-normal float-left">You have 4 new notifications
+                        </p>
+                        <span class="badge badge-pill badge-warning float-right">View all</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                        <div class="preview-thumbnail">
+                            <div class="preview-icon bg-success">
+                                <i class="icon-info mx-0"></i>
+                            </div>
+                        </div>
+                        <div class="preview-item-content">
+                            <h6 class="preview-subject font-weight-medium">Application Error</h6>
+                            <p class="font-weight-light small-text">
+                                Just now
+                            </p>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                        <div class="preview-thumbnail">
+                            <div class="preview-icon bg-warning">
+                                <i class="icon-speech mx-0"></i>
+                            </div>
+                        </div>
+                        <div class="preview-item-content">
+                            <h6 class="preview-subject font-weight-medium">Settings</h6>
+                            <p class="font-weight-light small-text">
+                                Private message
+                            </p>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="btn btn-danger btn-block" href="{{route('cerrar_sesion')}}">Cerrar Sesión</a>
+                </div>
             </li>
         </ul>
         <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">

@@ -1,5 +1,7 @@
 <?php
 
+
+
 namespace App\Models;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -10,25 +12,30 @@ use Illuminate\Notifications\Notifiable;
 class User extends Authenticatable
 {
     use HasFactory, Notifiable;
-
+    protected $table='usuarios';
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'name',
+        'nombre',
+        'apellido',
+        'identificacion',
+        'fecha_nacimiento',
+        'numero_telefonico',
+        'pais',
         'email',
-        'password',
+        'usuario',
+        'contraseña'
     ];
-
     /**
      * The attributes that should be hidden for arrays.
      *
      * @var array
      */
     protected $hidden = [
-        'password',
+        'constraseña',
         'remember_token',
     ];
 
@@ -41,3 +48,4 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 }
+

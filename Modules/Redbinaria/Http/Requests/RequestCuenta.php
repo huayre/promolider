@@ -1,10 +1,10 @@
 <?php
 
-namespace Modules\Autenticacion\Http\Requests;
+namespace Modules\Redbinaria\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class RequestUsuario extends FormRequest
+class RequestCuenta extends FormRequest
 {
     /**
      * Get the validation rules that apply to the request.
@@ -20,9 +20,9 @@ class RequestUsuario extends FormRequest
             'fecha_nacimiento'=>'required',
             'numero_telefonico'=>'required',
             'pais'=>'required',
-            'email'=>'required|unique:usuarios',
-            'usuario'=>'required|unique:usuarios',
-            'contraseña'=>'required|confirmed'
+            'email'=>'required|unique:afiliados',
+            'usuario'=>'required|unique:afiliados',
+            'password'=>'required|confirmed'
         ];
     }
 
@@ -35,4 +35,5 @@ class RequestUsuario extends FormRequest
     {
         return true;
     }
+
 }

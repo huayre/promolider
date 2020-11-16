@@ -8,11 +8,14 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Modules\Redbinaria\Entities\Rderecha;
+use Modules\Redbinaria\Entities\Rizquierda;
+use Kalnoy\Nestedset\NodeTrait;
 
 class User extends Authenticatable
 {
-    use HasFactory, Notifiable;
-    protected $table='usuarios';
+    use HasFactory, Notifiable,NodeTrait;
+    protected $table = 'afiliados';
     /**
      * The attributes that are mass assignable.
      *
@@ -27,7 +30,8 @@ class User extends Authenticatable
         'pais',
         'email',
         'usuario',
-        'contraseña'
+        'password',
+        'orden'
     ];
     /**
      * The attributes that should be hidden for arrays.
@@ -35,8 +39,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'constraseña',
-        'remember_token',
+        'password'
     ];
 
     /**
@@ -47,5 +50,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function hijos(){
+
+        return $this->hasMany(User::class, 'parent_id');
+
+    }
+
 }
 

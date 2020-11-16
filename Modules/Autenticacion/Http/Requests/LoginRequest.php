@@ -15,7 +15,7 @@ class LoginRequest extends FormRequest
     {
         return [
             'usuario'=>'required',
-            'contraseña'=>'required'
+            'password'=>'required'
         ];
     }
 

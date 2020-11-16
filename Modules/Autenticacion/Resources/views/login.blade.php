@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset('plantilla\vendors\font-awesome\css\font-awesome.min.css')}}">
     <title>Document</title>
+    @toastr_css
 </head>
 <style>
     #particles-js{
@@ -65,9 +66,9 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fa fa-lock"></i></span>
                             </div>
-                            <input  type="password" class="form-control @error('contraseña') is-invalid @enderror" name="contraseña" required autocomplete="current-password" placeholder="Contraseña">
+                            <input  type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Contraseña">
 
-                            @error('contraseña')
+                            @error('password')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -105,5 +106,8 @@
 </div>
 <script src="{{'paquetes/particles.js/particles.js'}}"></script>
 <script src="{{'paquetes/particles.js/app.js'}}"></script>
+@jquery
+@toastr_js
+@toastr_render
 </body>
 </html>

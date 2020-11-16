@@ -8,7 +8,7 @@
                 </div>
                 <div class="profile-name">
                     <p class="name text-uppercase text-primary">
-                        {{Auth::user()->nombre}}
+                     {{Auth::user()->nombre}}
                     </p>
                     <p class="designation">
                         Super Admin
@@ -37,8 +37,7 @@
             <div class="collapse" id="page-layouts">
                 <ul class="nav flex-column sub-menu">
                     <li class="nav-item d-none d-lg-block"> <a class="nav-link" href="{{route('nuevoregistro')}}">Nuevo Registro</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages\layout\rtl-layout.html">RTL</a></li>
-                    <li class="nav-item d-none d-lg-block"> <a class="nav-link" href="pages\layout\horizontal-menu.html">Horizontal Menu</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{{route('arbolbinario')}}">Arbol Binario</a></li>
                 </ul>
             </div>
         </li>

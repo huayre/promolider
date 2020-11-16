@@ -20,24 +20,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d974e5a9-f95e-4f4f-a6c6-84ed9d32ecce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Modules/Autenticacion/Repository/RepositorioUsuario.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Autenticacion/Resources/views/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Autenticacion/Resources/views/prueba.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Autenticacion/Resources/views/registro.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Autenticacion/Service/ServicioUsuario.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Redbinaria/Repository/RepositorioAfiliado.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Redbinaria/Repository/RepositorioRed.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Redbinaria/Resources/views/afiliado/nuevo.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Redbinaria/Resources/views/arbolbinario/mapa.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Redbinaria/Resources/views/arbolbinario/nodoshijos.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Redbinaria/Service/ServicioAfiliado.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Redbinaria/Service/ServicioRed.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Autenticacion/Http/Controllers/AutenticacionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Autenticacion/Http/Controllers/AutenticacionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Autenticacion/Http/Requests/LoginRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Autenticacion/Http/Requests/LoginRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Autenticacion/Http/Requests/RequestUsuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Redbinaria/Http/Requests/RequestCuenta.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Autenticacion/Repository/RepositorioUsuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Autenticacion/Repository/RepositorioUsuario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Autenticacion/Resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Autenticacion/Resources/views/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Autenticacion/Resources/views/registro.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Autenticacion/Routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Autenticacion/Routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Autenticacion/Service/ServicioUsuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Autenticacion/Service/ServicioUsuario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Autenticacion/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Autenticacion/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Autenticacion/module.json" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Autenticacion/module.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_07_201359_create_usuarios_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules_statuses.json" beforeDir="false" afterPath="$PROJECT_DIR$/modules_statuses.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/plantilla/aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/plantilla/aside.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/plantilla/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/plantilla/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/plantilla/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/plantilla/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/inicio.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,6 +171,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
       <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
       <path value="$PROJECT_DIR$/vendor/nwidart/laravel-modules" />
+      <path value="$PROJECT_DIR$/vendor/kalnoy/nestedset" />
       <path value="$PROJECT_DIR$/vendor/yoeunes/toastr" />
     </include_path>
   </component>
@@ -177,7 +190,13 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\TRABAJOS\PROMOLIDER\app\Modules\Redbinaria\Service" />
+      <recent name="E:\TRABAJOS\PROMOLIDER\app\Modules\Redbinaria\Repository" />
+      <recent name="E:\TRABAJOS\PROMOLIDER\app\Modules\Redbinaria\Http\Requests" />
       <recent name="E:\TRABAJOS\PROMOLIDER\app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\TRABAJOS\PROMOLIDER\app\Modules\Redbinaria\Resources\views\afiliado" />
     </key>
   </component>
   <component name="RunManager">
@@ -200,7 +219,17 @@
       <workItem from="1604708020864" duration="2402000" />
       <workItem from="1604713121225" duration="4076000" />
       <workItem from="1604757225789" duration="36826000" />
-      <workItem from="1604810104323" duration="3736000" />
+      <workItem from="1604810104323" duration="4031000" />
+      <workItem from="1604842548700" duration="11915000" />
+      <workItem from="1604861586503" duration="16476000" />
+      <workItem from="1605188508656" duration="6000000" />
+      <workItem from="1605202029064" duration="45000" />
+      <workItem from="1605214471178" duration="12303000" />
+      <workItem from="1605237625293" duration="9618000" />
+      <workItem from="1605276630777" duration="20902000" />
+      <workItem from="1605323484536" duration="4577000" />
+      <workItem from="1605392261874" duration="5648000" />
+      <workItem from="1605449288712" duration="24605000" />
     </task>
     <servers />
   </component>
@@ -232,17 +261,21 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1604796665722" />
-    <state x="439" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604795039485">
+    <state x="439" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604848520359">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="439" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1604795039485" />
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604789492024">
+    <state x="439" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1604848520359" />
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604872650140">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1604789492024" />
-    <state x="457" y="154" key="NewPhpClassDialog" timestamp="1604800025097">
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1604872650140" />
+    <state x="457" y="154" key="NewPhpClassDialog" timestamp="1604874658331">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="457" y="154" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1604800025097" />
+    <state x="457" y="154" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1604874658331" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1605392758070">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1605392758070" />
   </component>
 </project>

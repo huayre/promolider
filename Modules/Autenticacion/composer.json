@@ -19,5 +19,8 @@
         "psr-4": {
             "Modules\\Autenticacion\\": ""
         }
+    },
+    "require": {
+        "yoeunes/toastr": "^1.2"
     }
 }

@@ -5,7 +5,8 @@
     "keywords": [],
     "priority": 0,
     "providers": [
-        "Modules\\Autenticacion\\Providers\\AutenticacionServiceProvider"
+        "Modules\\Autenticacion\\Providers\\AutenticacionServiceProvider",
+        "Yoeunes\\Toastr\\ToastrServiceProvider"
     ],
     "aliases": {},
     "files": [],

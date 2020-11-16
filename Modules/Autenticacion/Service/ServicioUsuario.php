@@ -16,19 +16,15 @@ class ServicioUsuario
         $this->UsuarioRepositorio=$UsuarioRepositorio;
     }
 
-    public function crearNuevoAfiliado($datosusuario)
-    {
-        $this->UsuarioRepositorio->crearCuenta($datosusuario);
-    }
     public function accesoSistema($credenciales)
     {
         //Se recupera el campo usuario y se busca en la base de datos al usuario con dicho campo
         $usario_buscar = $credenciales->usuario;
-        $contraseña = $credenciales->contraseña;
+        $password = $credenciales->password;
 
         $usuario = $this->UsuarioRepositorio->BuscarUsuario($usario_buscar);
 
-        if (isset($usuario) && Hash::check($contraseña,$usuario->contraseña)) {
+        if (isset($usuario) && Hash::check($password,$usuario->password)) {
             Auth::login($usuario);
             return  true;
         }

@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="{{asset('plantilla\css\style.css')}}">
     <!-- endinject -->
     <link rel="shortcut icon" href="{{asset('plantilla\images\favicon.png')}}">
+
     @toastr_css
 </head>
 <body>
@@ -42,8 +43,7 @@
     </div>
 
 
-
-    <!-- plugins:js -->
+      <!-- plugins:js -->
     <script src="{{asset('plantilla\vendors\js\vendor.bundle.base.js')}}"></script>
     <!-- endinject -->
     <!-- Plugin js for this page-->
@@ -63,6 +63,8 @@
     <!-- Custom js for this page-->
     <script src="{{asset('plantilla\js\dashboard.js')}}"></script>
     <!-- End custom js for this page-->
+
     @toastr_js
+    @toastr_render
 </body>
 </html>

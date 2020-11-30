@@ -16,6 +16,15 @@ class ServicioUsuario
         $this->UsuarioRepositorio=$UsuarioRepositorio;
     }
 
+    // funcion que vefifica que tenemos algun usuario en sesion
+    public function verificarUserLogeado()
+    {
+       if (Auth::check()){
+           return true;
+       }
+       return false;
+    }
+
     public function accesoSistema($credenciales)
     {
         //Se recupera el campo usuario y se busca en la base de datos al usuario con dicho campo
@@ -29,7 +38,6 @@ class ServicioUsuario
             return  true;
         }
         else{
-            session()->flash('error_credenciales','Las credenciales son incorrectas');
             return false;
         }
 

@@ -612,4 +612,18 @@
            <button type="submit" class="btn btn-primary my-5 btn-block p-2">REGISTRAR NUEVO AFILIADO</button>
         </form>
     </div>
+
+    <button type="button" onclick="MenssajeConfirmacion()" >OK</button>
+@endsection
+@section('script')
+    <script>
+        function MenssajeConfirmacion()
+        {
+            Swal.fire(
+                'The Internet?',
+                'That thing is still around?',
+                'question'
+            )
+        }
+    </script>
 @endsection

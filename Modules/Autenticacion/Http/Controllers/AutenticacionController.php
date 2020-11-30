@@ -19,18 +19,24 @@ class AutenticacionController extends Controller
         $this->ServicioUsuario=$ServicioUsuario;
     }
 
+   public function vistaLogin()
+   {
+      if ($this->ServicioUsuario->verificarUserLogeado())
+      {
+          return redirect()->intended('inicio');
+      }
+       return view('autenticacion::login');
+   }
+
    public function login(LoginRequest $request)
    {
 
       if ($this->ServicioUsuario->accesoSistema($request)){
-          return redirect()->route('inicio');
-
+          return redirect()->intended('inicio');
       }
       else{
           return redirect()->route('login');
-          Toastr::success('Data has been saved successfully!');
       }
-       \toastr()->success('Data has been saved successfully!');
    }
 
    public function cerrarSesion()

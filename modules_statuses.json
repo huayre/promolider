@@ -1,4 +1,6 @@
 {
     "Autenticacion": true,
-    "Redbinaria": true
+    "Redbinaria": true,
+    "Administracion": true,
+    "Web": true
 }

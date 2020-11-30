@@ -15,6 +15,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        $this->call([
+            AfiliacionSeeder::class
+        ]);
+
         User::create([
                 'nombre'            =>'Roy Carlos',
                 'apellido'          =>'Huayre Bujaico',
@@ -25,6 +29,6 @@ class DatabaseSeeder extends Seeder
                 'email'             =>'admin@gmail.com',
                 'usuario'           =>'admin',
                 'password'        =>Hash::make('admin')
-            ]);
+        ]);
     }
 }

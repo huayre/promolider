@@ -22,7 +22,9 @@
     <link rel="stylesheet" href="{{asset('plantilla\css\style.css')}}">
     <!-- endinject -->
     <link rel="shortcut icon" href="{{asset('plantilla\images\favicon.png')}}">
-
+    <!-- datatables -->
+    <link rel="stylesheet" href="{{asset('plantilla\vendors\datatables.net-bs4\dataTables.bootstrap4.css')}}">
+    <!-- yoeunes/toastr -->
     @toastr_css
 </head>
 <body>
@@ -33,11 +35,16 @@
                  @include('plantilla.panel_diseño')
                  @include('plantilla.panel_opciones')
                  @include('plantilla.aside')
-                <div class="content-wrapper">
-                    @yield('contenido')
-                    @include('plantilla.footer')
-                </div>
+                <div class="content-wrapper"  style="background-color:#DEE6E4">
+                    <div class="card">
+                        <div class="card-body shadow">
+                            @yield('contenido')
 
+                        </div>
+                    </div>
+
+                </div>
+                @include('plantilla.footer')
             </div>
         </div>
     </div>
@@ -62,9 +69,19 @@
     <!-- endinject -->
     <!-- Custom js for this page-->
     <script src="{{asset('plantilla\js\dashboard.js')}}"></script>
-    <!-- End custom js for this page-->
-
+    <!-- yoeunes/toastr-->
+    @jquery
     @toastr_js
     @toastr_render
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- datatables -->
+    <script src="{{asset('plantilla\vendors\datatables.net\jquery.dataTables.js')}}"></script>
+    <script src="{{asset('plantilla\vendors\datatables.net-bs4\dataTables.bootstrap4.js')}}"></script>
+    <!-- Custom js for this page-->
+    <script src="{{asset('plantilla\js\data-table.js')}}"></script>
+
+
+    @yield('script')
+
 </body>
 </html>

@@ -30,14 +30,27 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#page-layouts" aria-expanded="false" aria-controls="page-layouts">
-                <i class="icon-check menu-icon"></i>
+            <a class="nav-link" data-toggle="collapse" href="#red-binaria" aria-expanded="false" aria-controls="page-layouts">
+                <i class="fa fa-sitemap menu-icon text-primary"></i>
                 <span class="menu-title">Mi Red Binaria</span>
             </a>
-            <div class="collapse" id="page-layouts">
+            <div class="collapse" id="red-binaria">
                 <ul class="nav flex-column sub-menu">
                     <li class="nav-item d-none d-lg-block"> <a class="nav-link" href="{{route('nuevoregistro')}}">Nuevo Registro</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="{{route('arbolbinario')}}">Arbol Binario</a></li>
+                    <li class="nav-item d-none d-lg-block"> <a class="nav-link" href="{{route('arbolbinario')}}">Arbol Binario</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#administracion" aria-expanded="false" aria-controls="page-layouts">
+                <i class="fa fa fa-user-circle-o menu-icon text-primary"></i>
+                <span class="menu-title">Administración</span>
+            </a>
+            <div class="collapse" id="administracion">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item d-none d-lg-block"> <a class="nav-link" href="{{route('afiliacion.index')}}">Afiliaciones</a></li>
+                    <li class="nav-item d-none d-lg-block"> <a class="nav-link" href="#">Productos</a></li>
+                    <li class="nav-item d-none d-lg-block"> <a class="nav-link" href="#">Productos</a></li>
                 </ul>
             </div>
         </li>

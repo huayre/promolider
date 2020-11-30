@@ -1,0 +1,13 @@
+{
+    "name": "Redbinaria",
+    "alias": "redbinaria",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Redbinaria\\Providers\\RedbinariaServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

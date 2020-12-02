@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
-            AfiliacionSeeder::class
+         //   AfiliacionSeeder::class
         ]);
 
         User::create([

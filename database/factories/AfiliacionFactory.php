@@ -4,7 +4,7 @@ namespace Database\Factories;
 
 use App\Models\Model;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Modules\Administracion\Entities\Afiliacion;
+use Modules\Administracion\Entities\Paquete;
 
 class AfiliacionFactory extends Factory
 {
@@ -13,7 +13,7 @@ class AfiliacionFactory extends Factory
      *
      * @var string
      */
-    protected $model = Afiliacion::class;
+    protected $model = Paquete::class;
 
     /**
      * Define the model's default state.

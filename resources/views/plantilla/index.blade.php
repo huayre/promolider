@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="{{asset('plantilla\vendors\datatables.net-bs4\dataTables.bootstrap4.css')}}">
     <!-- yoeunes/toastr -->
     @toastr_css
+
 </head>
 <body>
     <div class="container-scroller">

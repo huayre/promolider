@@ -11,10 +11,11 @@ use Illuminate\Notifications\Notifiable;
 use Modules\Redbinaria\Entities\Rderecha;
 use Modules\Redbinaria\Entities\Rizquierda;
 use Kalnoy\Nestedset\NodeTrait;
+use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable
 {
-    use HasFactory, Notifiable,NodeTrait;
+    use HasFactory, Notifiable,NodeTrait,HasRoles;
     protected $table = 'afiliados';
     /**
      * The attributes that are mass assignable.

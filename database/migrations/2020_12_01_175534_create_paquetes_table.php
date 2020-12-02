@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAfiliacionesTable extends Migration
+class CreatePaquetesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,15 @@ class CreateAfiliacionesTable extends Migration
      */
     public function up()
     {
-        Schema::create('afiliaciones', function (Blueprint $table) {
+        Schema::create('paquetes', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
-            $table->float('precio');
-            $table->float('comisionable')->nullable();
-            $table->float('iva')->nullable();
-            $table->float('descuento_compra');
+            $table->float('precio_venta');
+            $table->float('iva');
+            $table->float('descuento_compras');
             $table->float('porcentaje_corte_binario');
+            $table->float('bono_efectivo_rapido');
+            $table->string('imagen');
             $table->timestamps();
         });
     }
@@ -32,6 +33,6 @@ class CreateAfiliacionesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('afiliaciones');
+        Schema::dropIfExists('paquetes');
     }
 }

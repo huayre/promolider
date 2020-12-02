@@ -5,15 +5,15 @@ namespace Modules\Administracion\Http\Controllers;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Modules\Administracion\Http\Requests\AfiliacionRequest;
-use Modules\Administracion\Service\AfiliacionService;
+use Modules\Administracion\Http\Requests\PaqueteRequest;
+use Modules\Administracion\Service\PaqueteService;
 
-class AfiliacionController extends Controller
+class PaqueteController extends Controller
 {
-    private $AfiliacionService;
-    public function __construct(AfiliacionService $AfiliacionService)
+    private $PaqueteService;
+    public function __construct(PaqueteService $PaqueteService)
     {
-        $this->AfiliacionService = $AfiliacionService;
+        $this->PaqueteService = $PaqueteService;
     }
 
     /**
@@ -22,8 +22,8 @@ class AfiliacionController extends Controller
      */
     public function index()
     {
-        $listaAfiliacion=$this->AfiliacionService->listadoAfiliacion();
-        return view('administracion::Afiliacion.index')->with(['listaAfiliacion'=>$listaAfiliacion]);
+        $listaPaquetes=$this->PaqueteService->listadoPaquetesAfilicion();
+        return view('administracion::paquetes.index')->with(['listaPaquetes'=>$listaPaquetes]);
     }
 
     /**
@@ -32,7 +32,7 @@ class AfiliacionController extends Controller
      */
     public function create()
     {
-        return view('administracion::afiliacion.crear');
+        return view('administracion::paquetes.crear');
     }
 
     /**
@@ -40,12 +40,12 @@ class AfiliacionController extends Controller
      * @param Request $request
      * @return Renderable
      */
-    public function store(AfiliacionRequest $request)
+    public function store(PaqueteRequest $request)
     {
-        $this->AfiliacionService->crearNuevaAfiliacion($request);
+        $this->PaqueteService->crearPaqueteAfiliacion($request);
         toastr()->success('Afiliación creado Correctamente..!!!','MENSAJE');
 
-        return redirect()->route('afiliacion.index');
+        return redirect()->route('paquete.index');
     }
 
     /**
@@ -86,8 +86,8 @@ class AfiliacionController extends Controller
      */
     public function destroy($id)
     {
-        $this->AfiliacionService->eliminarAfiliacion($id);
+        $this->PaqueteService->eliminarPaqueteAfiliacion($id);
         toastr()->success('Afiliación eliminado Correctamente..!!!','MENSAJE');
-        return redirect()->route('afiliacion.index');
+        return redirect()->route('paquete.index');
     }
 }

@@ -2,19 +2,28 @@
 
 namespace Modules\Administracion\Http\Controllers;
 
+use http\Env\Response;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Modules\Administracion\Http\Requests\CursoRequest;
+use Modules\Administracion\Service\ServiceCurso;
 
-class ProductoController extends Controller
+class CursoController extends Controller
 {
+    private $ServiceCurso;
+    public function __construct(ServiceCurso $ServiceCurso)
+    {
+        $this->ServiceCurso=$ServiceCurso;
+    }
+
     /**
      * Display a listing of the resource.
      * @return Renderable
      */
     public function index()
     {
-        return view('administracion::index');
+        return view('administracion::cursos.index');
     }
 
     /**
@@ -23,7 +32,7 @@ class ProductoController extends Controller
      */
     public function create()
     {
-        return view('administracion::create');
+        return view('administracion::cursos.crear');
     }
 
     /**
@@ -31,9 +40,12 @@ class ProductoController extends Controller
      * @param Request $request
      * @return Renderable
      */
-    public function store(Request $request)
+    public function store(CursoRequest $request)
     {
-        //
+        $this->ServiceCurso->aperturarCurso($request);
+    //    toastr()->success('Curso creado Correctamente..!!!','MENSAJE');
+
+        // return redirect()->route('curso.index');
     }
 
     /**

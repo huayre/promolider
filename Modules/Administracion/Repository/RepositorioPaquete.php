@@ -10,7 +10,7 @@ class RepositorioPaquete
 {
      public function listarPaquetes()
      {
-         return Paquete::all();
+         return Paquete::paginate(2);
      }
 
      public function crearPaquete($datosPaquete,$ruta)

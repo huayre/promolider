@@ -1,13 +1,13 @@
 @extends('plantilla.index')
 @section('contenido')
     <div class="bg-twitter">
-        <p class="text-center  text-light display-4">PAQUETES DE AFILIACIÓN</p>
+        <p class="text-center  text-light display-4">PAQUETES DE PRODUCTOS</p>
     </div>
     <div class="my-3">
-        <a href="{{route('paquete.create')}}" class="btn btn-primary btn-rounded"><i class="fa fa-plus-circle"></i>NUEVO PAQUETE</a>
+        <a href="{{route('curso.create')}}" class="btn btn-primary btn-rounded"><i class="fa fa-plus-circle"></i>NUEVO PRODUCTO</a>
     </div>
     <div  class="row">
-        @foreach($listaPaquetes as $paquete)
+      {{--  @foreach($listaPaquetes as $paquete)
             <div class="col-sm-6 col-md-4 my-3 ">
                 <div class="card  border-success" style="border:solid 1px #0e9f6e">
                     <img src="{{$paquete->imagen}}" class="card-img-top" alt="..." height="200">
@@ -30,6 +30,7 @@
             </div>
             @include('administracion::paquetes.modal_eliminar')
         @endforeach
+        --}}
     </div>
 @endsection
 @section('script')

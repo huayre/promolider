@@ -20,11 +20,10 @@ class CreateCursosTable extends Migration
             $table->string('imagen');
             $table->unsignedBigInteger('afiliado_id');
             $table->string('idioma');
-            $table->float('precio_inicial');
+            $table->float('precio_venta');
             $table->float('iva');
             $table->float('porcentaje_comisionable');
             $table->float('valor_comisionable');
-            $table->float('precio_venta_publico');
             $table->timestamps();
             $table->foreign('afiliado_id')->references('id')->on('afiliados');
         });

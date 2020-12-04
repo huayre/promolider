@@ -4,7 +4,7 @@ namespace Modules\Administracion\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class PaqueteRequest extends FormRequest
+class CursoRequest extends FormRequest
 {
     /**
      * Get the validation rules that apply to the request.
@@ -14,13 +14,15 @@ class PaqueteRequest extends FormRequest
     public function rules()
     {
         return [
-            'nombre'                    =>'required|unique:paquetes,nombre',
+            'nombre'                    =>'required|unique:cursos,nombre',
             'precio_venta'              =>'required|integer|min:0',
             'iva'                       =>'required|integer|between:0,100',
-            'descuento_compras'         =>'required|integer|between:0,100',
-            'porcentaje_corte_binario'  =>'required|integer|between:0,100',
-            'bono_efectivo_rapido'      =>'required|integer|between:0,100',
-            'imagen'                    =>'required'
+            'porcentaje_comisionable'   =>'required|integer|between:0,100',
+            'descripcion'               =>'required',
+            'imagen'                    =>'required',
+            'capacidad'                 =>'required',
+            'idioma'                    =>'required'
+
 
         ];
     }

@@ -26,6 +26,10 @@
     <link rel="stylesheet" href="{{asset('plantilla\vendors\datatables.net-bs4\dataTables.bootstrap4.css')}}">
     <!-- yoeunes/toastr -->
     @toastr_css
+    <!--stepper ccs-->
+
+
+    <link rel="stylesheet" href="{{asset('https://cdn.jsdelivr.net/npm/bs-stepper/dist/css/bs-stepper.min.css')}}">
 
 </head>
 <body>
@@ -50,9 +54,10 @@
         </div>
     </div>
 
-
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
       <!-- plugins:js -->
     <script src="{{asset('plantilla\vendors\js\vendor.bundle.base.js')}}"></script>
+
     <!-- endinject -->
     <!-- Plugin js for this page-->
     <script src="{{asset('plantilla\vendors\jquery-bar-rating\jquery.barrating.min.js')}}"></script>
@@ -61,6 +66,7 @@
     <script src="{{asset('plantilla\vendors\morris.js\morris.min.js')}}"></script>
     <script src="{{asset('plantilla\vendors\jquery-sparkline\jquery.sparkline.min.js')}}"></script>
     <!-- End plugin js for this page-->
+
     <!-- inject:js -->
     <script src="{{asset('plantilla\js\off-canvas.js')}}"></script>
     <script src="{{asset('plantilla\js\hoverable-collapse.js')}}"></script>
@@ -74,14 +80,13 @@
     @jquery
     @toastr_js
     @toastr_render
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <!-- datatables -->
     <script src="{{asset('plantilla\vendors\datatables.net\jquery.dataTables.js')}}"></script>
     <script src="{{asset('plantilla\vendors\datatables.net-bs4\dataTables.bootstrap4.js')}}"></script>
     <!-- Custom js for this page-->
     <script src="{{asset('plantilla\js\data-table.js')}}"></script>
-
-
+    <!--stepper js-->
+    <script src="{{asset('https://cdn.jsdelivr.net/npm/bs-stepper/dist/js/bs-stepper.min.js')}}"></script>
     @yield('script')
 
 </body>

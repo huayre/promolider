@@ -5,6 +5,7 @@ namespace Modules\Administracion\Http\Controllers;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Modules\Administracion\Entities\Paquete;
 use Modules\Administracion\Http\Requests\PaqueteRequest;
 use Modules\Administracion\Service\PaqueteService;
 
@@ -65,7 +66,9 @@ class PaqueteController extends Controller
      */
     public function edit($id)
     {
-        return view('administracion::edit');
+        $paquete = Paquete::findOrFail($id);
+
+        return view('administracion::paquetes.editar')->with(['paquete'=>$paquete]);
     }
 
     /**
@@ -76,7 +79,11 @@ class PaqueteController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
+        $this->PaqueteService->editarPaqueteAfiliacion($request, $id);
+        toastr()->success('Afiliación editado Correctamente..!!!','MENSAJE');
+
+        return redirect()->route('paquete.index');
     }
 
     /**

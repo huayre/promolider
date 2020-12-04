@@ -23,7 +23,7 @@
                     </div>
 
                     <div class="card-body d-flex justify-content-center">
-                        <a href="#" class="card-link"> <i class="fa fa-edit text-dark mr-2"></i>Editar</a>
+                        <a href="{{route('paquete.edit',$paquete->id)}}" class="card-link"> <i class="fa fa-edit text-dark mr-2"></i>Editar</a>
                         <a href="#" data-toggle="modal" data-target="#modal-delete-{{$paquete->id}}" class="card-link"> <i class="fa fa-trash-o text-danger mr-2"></i>Eliminar</a>
                     </div>
                 </div>

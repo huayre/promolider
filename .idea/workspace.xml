@@ -20,34 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d974e5a9-f95e-4f4f-a6c6-84ed9d32ecce" name="Default Changelist" comment="creacion arbol binario v1">
-      <change afterPath="$PROJECT_DIR$/Modules/Administracion/Http/Requests/PaqueteRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Administracion/Resources/views/paquetes/crear.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Administracion/Resources/views/paquetes/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Administracion/Resources/views/paquetes/modal_eliminar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b9329377-6258-4df9-84fd-9ef784bec1d9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b9329377-6258-4df9-84fd-9ef784bec1d9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b9329377-6258-4df9-84fd-9ef784bec1d9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b9329377-6258-4df9-84fd-9ef784bec1d9/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Entities/Afiliacion.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Administracion/Entities/Paquete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Http/Controllers/AfiliacionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Administracion/Http/Controllers/PaqueteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Http/Requests/AfiliacionRequest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Repository/RepositorioAfiliacion.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Administracion/Repository/RepositorioPaquete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Resources/views/afiliacion/crear.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Administracion/Resources/views/paquete1/crear.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Resources/views/afiliacion/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Administracion/Resources/views/paquete1/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Resources/views/afiliacion/modal_eliminar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Administracion/Resources/views/paquete1/modal_eliminar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Administracion/Routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Service/AfiliacionService.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Administracion/Service/PaqueteService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/AfiliacionFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/AfiliacionFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_27_053034_create_afiliaciones_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/AfiliacionSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/AfiliacionSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/plantilla/aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/plantilla/aside.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/plantilla/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/plantilla/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Http/Controllers/PaqueteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Administracion/Http/Controllers/PaqueteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Repository/RepositorioPaquete.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Administracion/Repository/RepositorioPaquete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Resources/views/paquetes/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Administracion/Resources/views/paquetes/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Service/PaqueteService.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Administracion/Service/PaqueteService.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,19 +167,19 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Modules/Administracion/Resources/views/paquetes" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\TRABAJOS\PROMOLIDER\app\Modules\Redbinaria\Resources\views\afiliado" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\promolider\Modules\Administracion\Resources\views\paquetes" />
       <recent name="E:\TRABAJOS\PROMOLIDER\app\Modules\Administracion\Resources\views\paquetes" />
       <recent name="E:\TRABAJOS\PROMOLIDER\app\Modules\Administracion\Resources\views\paquete" />
       <recent name="E:\TRABAJOS\PROMOLIDER\app\Modules\Autenticacion\Resources\views" />
       <recent name="E:\TRABAJOS\PROMOLIDER\app\Modules\Administracion\Resources\views" />
-      <recent name="E:\TRABAJOS\PROMOLIDER\app\Modules\Redbinaria\Service" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\TRABAJOS\PROMOLIDER\app\Modules\Redbinaria\Resources\views\afiliado" />
     </key>
   </component>
   <component name="RunManager">
@@ -255,6 +234,9 @@
       <workItem from="1606778328592" duration="11728000" />
       <workItem from="1606836629915" duration="4696000" />
       <workItem from="1606843758468" duration="21580000" />
+      <workItem from="1606878328589" duration="18668000" />
+      <workItem from="1607004115504" duration="13430000" />
+      <workItem from="1607038669820" duration="12722000" />
     </task>
     <task id="LOCAL-00001" summary="creacion arbol binario v1">
       <created>1605497033518</created>
@@ -290,10 +272,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="309" y="42" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1604796656687" />
-    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606845637574">
+    <state x="261" y="45" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606878888197">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1606845637574" />
+    <state x="261" y="45" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1606878888197" />
     <state x="447" y="165" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604708518392">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -310,10 +292,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1606854684454" />
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606707151524">
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607044425013">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1606707151524" />
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1607044425013" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1606456640117">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -350,10 +332,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="496" y="173" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1606706912559" />
-    <state x="184" y="8" key="SettingsEditor" timestamp="1606508335318">
+    <state x="184" y="8" key="SettingsEditor" timestamp="1607056588901">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1606508335318" />
+    <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1607056588901" />
     <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1605497157370">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -362,9 +344,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="565" y="248" width="316" height="246" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.728@0.0.1366.728" timestamp="1606845500190" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1606457543604">
+    <state x="339" y="162" key="run.anything.popup" timestamp="1606939697598">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1606457543604" />
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1606939697598" />
   </component>
 </project>

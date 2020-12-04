@@ -16,18 +16,32 @@ class PaqueteService
       $this->RepositorioPaquete = $RepositorioPaquete;
   }
 
-  public function listadoPaquetesAfilicion()
-  {
-      return $this->RepositorioPaquete->listarPaquetes();
-  }
+    public function listadoPaquetesAfilicion()
+    {
+        return $this->RepositorioPaquete->listarPaquetes();
+    }
 
-  public function crearPaqueteAfiliacion($datosPaquete)
-  {
-      $imagen = $datosPaquete->file('imagen')->store('public/imagenes/paquetes');
-      $ruta=Storage::url($imagen);
-      $ruta=asset($ruta);
-     $this->RepositorioPaquete->crearPaquete($datosPaquete,$ruta);
-  }
+    public function crearPaqueteAfiliacion($datosPaquete)
+    {
+        $imagen = $datosPaquete->file('imagen')->store('public/imagenes/paquetes');
+        $ruta=Storage::url($imagen);
+        $ruta=asset($ruta);
+        $this->RepositorioPaquete->crearPaquete($datosPaquete,$ruta);
+    }
+
+    public function editarPaqueteAfiliacion($datosPaquete, $id)
+    {
+
+        if ($datosPaquete->hasFile('imagen')) {
+
+            $imagen = $datosPaquete->file('imagen')->store('public/imagenes/paquetes');
+
+        }
+        $ruta=Storage::url($imagen);
+        $ruta=asset($ruta);
+        $this->RepositorioPaquete->editarPaquete($datosPaquete,$ruta,$id);
+    }
+
 
   public function eliminarPaqueteAfiliacion($idAfiliacion)
   {

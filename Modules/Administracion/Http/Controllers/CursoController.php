@@ -6,13 +6,13 @@ use http\Env\Response;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Modules\Administracion\Http\Requests\CursoRequest;
-use Modules\Administracion\Service\ServiceCurso;
+use Modules\Administracion\Http\Requests\CrearCursoRequest;
+use Modules\Administracion\Service\CursoServicio;
 
 class CursoController extends Controller
 {
     private $ServiceCurso;
-    public function __construct(ServiceCurso $ServiceCurso)
+    public function __construct(CursoServicio $ServiceCurso)
     {
         $this->ServiceCurso=$ServiceCurso;
     }
@@ -22,8 +22,8 @@ class CursoController extends Controller
      * @return Renderable
      */
     public function index()
-    {
-        return view('administracion::cursos.index');
+    {   $listadoCursos=$this->ServiceCurso->ListadoCursos();
+        return view('administracion::cursos.index')->with(['listadoCursos'=>$listadoCursos]);
     }
 
     /**
@@ -40,12 +40,11 @@ class CursoController extends Controller
      * @param Request $request
      * @return Renderable
      */
-    public function store(CursoRequest $request)
+    public function store(CrearCursoRequest $request)
     {
         $this->ServiceCurso->aperturarCurso($request);
-    //    toastr()->success('Curso creado Correctamente..!!!','MENSAJE');
-
-        // return redirect()->route('curso.index');
+        toastr()->success('Curso creado Correctamente..!!!','MENSAJE');
+        return redirect()->route('curso.index');
     }
 
     /**

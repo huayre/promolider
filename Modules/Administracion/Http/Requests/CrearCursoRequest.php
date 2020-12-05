@@ -4,7 +4,7 @@ namespace Modules\Administracion\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CursoRequest extends FormRequest
+class CrearCursoRequest extends FormRequest
 {
     /**
      * Get the validation rules that apply to the request.
@@ -15,9 +15,9 @@ class CursoRequest extends FormRequest
     {
         return [
             'nombre'                    =>'required|unique:cursos,nombre',
-            'precio_venta'              =>'required|integer|min:0',
-            'iva'                       =>'required|integer|between:0,100',
-            'porcentaje_comisionable'   =>'required|integer|between:0,100',
+            'precio_venta'              =>'required',
+            'iva'                       =>'required',
+            'porcentaje_comisionable'   =>'required',
             'descripcion'               =>'required',
             'imagen'                    =>'required',
             'capacidad'                 =>'required',

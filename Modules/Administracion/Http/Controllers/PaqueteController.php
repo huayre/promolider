@@ -6,13 +6,14 @@ use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Modules\Administracion\Entities\Paquete;
-use Modules\Administracion\Http\Requests\PaqueteRequest;
-use Modules\Administracion\Service\PaqueteService;
+use Modules\Administracion\Http\Requests\ActualizarPaqueteRequest;
+use Modules\Administracion\Http\Requests\CrearPaqueteRequest;
+use Modules\Administracion\Service\PaqueteServicio;
 
 class PaqueteController extends Controller
 {
     private $PaqueteService;
-    public function __construct(PaqueteService $PaqueteService)
+    public function __construct(PaqueteServicio $PaqueteService)
     {
         $this->PaqueteService = $PaqueteService;
     }
@@ -41,7 +42,7 @@ class PaqueteController extends Controller
      * @param Request $request
      * @return Renderable
      */
-    public function store(PaqueteRequest $request)
+    public function store(CrearPaqueteRequest $request)
     {
         $this->PaqueteService->crearPaqueteAfiliacion($request);
         toastr()->success('Afiliación creado Correctamente..!!!','MENSAJE');
@@ -77,7 +78,7 @@ class PaqueteController extends Controller
      * @param int $id
      * @return Renderable
      */
-    public function update(Request $request, $id)
+    public function update(ActualizarPaqueteRequest $request, $id)
     {
 
         $this->PaqueteService->editarPaqueteAfiliacion($request, $id);

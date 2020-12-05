@@ -4,7 +4,7 @@ namespace Modules\Administracion\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class PaqueteRequest extends FormRequest
+class CrearPaqueteRequest extends FormRequest
 {
     /**
      * Get the validation rules that apply to the request.
@@ -15,11 +15,11 @@ class PaqueteRequest extends FormRequest
     {
         return [
             'nombre'                    =>'required|unique:paquetes,nombre',
-            'precio_venta'              =>'required|integer|min:0',
-            'iva'                       =>'required|integer|between:0,100',
-            'descuento_compras'         =>'required|integer|between:0,100',
-            'porcentaje_corte_binario'  =>'required|integer|between:0,100',
-            'bono_efectivo_rapido'      =>'required|integer|between:0,100',
+            'precio_venta'              =>'required',
+            'iva'                       =>'required',
+            'descuento_compras'         =>'required',
+            'porcentaje_corte_binario'  =>'required',
+            'bono_efectivo_rapido'      =>'required',
             'imagen'                    =>'required'
 
         ];

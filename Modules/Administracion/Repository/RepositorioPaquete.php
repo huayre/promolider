@@ -10,38 +10,20 @@ class RepositorioPaquete
 {
      public function listarPaquetes()
      {
-         return Paquete::paginate(2);
+         return Paquete::all();
      }
 
-     public function crearPaquete($datosPaquete,$ruta)
+     public function crearPaquete($datosPaquete)
      {
-        Paquete::create([
-            'nombre'                    =>$datosPaquete->nombre,
-            'precio_venta'              =>$datosPaquete->precio_venta,
-            'iva'                       =>$datosPaquete->iva,
-            'descuento_compras'         =>$datosPaquete->descuento_compras,
-            'porcentaje_corte_binario'  =>$datosPaquete->porcentaje_corte_binario,
-            'bono_efectivo_rapido'      =>$datosPaquete->bono_efectivo_rapido,
-            'imagen'                    =>$ruta
-        ]);
+        Paquete::create($datosPaquete);
      }
 
 
 
-     public function editarPaquete($datosPaquete,$ruta,$id){
+     public function editarPaquete($datosPaquete,$id){
 
          $paquete = Paquete::find($id);
-         $paquete->Update([
-             'nombre'                    =>$datosPaquete->nombre,
-             'precio_venta'              =>$datosPaquete->precio_venta,
-             'iva'                       =>$datosPaquete->iva,
-             'descuento_compras'         =>$datosPaquete->descuento_compras,
-             'porcentaje_corte_binario'  =>$datosPaquete->porcentaje_corte_binario,
-             'bono_efectivo_rapido'      =>$datosPaquete->bono_efectivo_rapido,
-             'imagen'                    =>$ruta
-         ]);
-
-
+         $paquete->Update($datosPaquete);
      }
 
      public function eliminarPaquete($idPaquete)

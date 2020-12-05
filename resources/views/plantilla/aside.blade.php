@@ -42,13 +42,26 @@
             </div>
         </li>
         <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#tienda-virtual" aria-expanded="false" aria-controls="oficina-virtual">
+                <i class="fa fa-shopping-cart menu-icon text-primary"></i>
+                <span class="menu-title">Tienda Virtual</span>
+            </a>
+            <div class="collapse" id="tienda-virtual">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item "> <a class="nav-link" href="#">Afiliaciones</a></li>
+                    <li class="nav-item "> <a class="nav-link" href="#">Productos</a></li>
+                    <li class="nav-item "> <a class="nav-link" href="#">Productos</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#oficina-virtual" aria-expanded="false" aria-controls="oficina-virtual">
                 <i class="fa fa-desktop menu-icon text-primary"></i>
                 <span class="menu-title">Oficina Virtual</span>
             </a>
             <div class="collapse" id="oficina-virtual">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item "> <a class="nav-link" href="#">Afiliaciones</a></li>
+                    <li class="nav-item "> <a class="nav-link" href="#">Mi Oficina</a></li>
                     <li class="nav-item "> <a class="nav-link" href="#">Productos</a></li>
                     <li class="nav-item "> <a class="nav-link" href="#">Productos</a></li>
                 </ul>

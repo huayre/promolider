@@ -58,7 +58,7 @@
                             <label>Imagen <small class="text-google">requerido</small></label>
                             <label class="btn btn-light btn-file " style="cursor: pointer">
                                 <i class="fa fa-cloud-upload text-primary"></i>
-                                <input type="file" name="imagen" class="fileimagen"  accept="image/*" hidden >
+                                <input type="file" name="imagen" class="fileimagen"  hidden accept="image/*">
                             </label>
                             <div class="border-primary">
                                 <img  class="w-100 cargarimagen" height="253" style="background-color:#EBF5FB" src="{{$paquete->imagen}}">

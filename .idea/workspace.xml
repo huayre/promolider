@@ -19,21 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d974e5a9-f95e-4f4f-a6c6-84ed9d32ecce" name="Default Changelist" comment="crear un curso">
-      <change afterPath="$PROJECT_DIR$/Modules/Administracion/Http/Requests/CrearPaqueteRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Administracion/Service/PaqueteServicio.php" afterDir="false" />
+    <list default="true" id="d974e5a9-f95e-4f4f-a6c6-84ed9d32ecce" name="Default Changelist" comment="creaear curso y mejora de actualizar paquete">
+      <change afterPath="$PROJECT_DIR$/Modules/Administracion/Entities/Anuncio.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Administracion/Repository/AnuncioRepositorio.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Administracion/Resources/views/anuncios/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Administracion/Service/AnuncioServicio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c1c061ad-34cf-4882-9408-5362e1b7f626.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c1c061ad-34cf-4882-9408-5362e1b7f626.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Http/Controllers/CursoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Administracion/Http/Controllers/CursoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Http/Controllers/PaqueteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Administracion/Http/Controllers/PaqueteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Http/Requests/CursoRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Administracion/Http/Requests/CrearCursoRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Http/Requests/PaqueteRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Administracion/Http/Requests/ActualizarPaqueteRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Repository/RepositorioCurso.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Administracion/Repository/RepositorioCurso.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Repository/RepositorioPaquete.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Administracion/Repository/RepositorioPaquete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Resources/views/cursos/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Administracion/Resources/views/cursos/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Resources/views/paquetes/editar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Administracion/Resources/views/paquetes/editar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Resources/views/paquetes/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Administracion/Resources/views/paquetes/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Service/PaqueteService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Service/ServiceCurso.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Administracion/Service/CursoServicio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Administracion/Routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Web/Resources/views/inicio/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Web/Resources/views/inicio/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/plantilla/aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/plantilla/aside.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,22 +170,22 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Modules/Administracion/Http/Requests" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Modules/Administracion/Resources/views/anuncios" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\TRABAJOS\PROMOLIDER\app\Modules\Redbinaria\Resources\views\afiliado" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\TRABAJOS\PROMOLIDER\app\Modules\Administracion\Resources\views\anuncios" />
       <recent name="E:\TRABAJOS\PROMOLIDER\app\Modules\Administracion\Http\Requests" />
       <recent name="E:\TRABAJOS\PROMOLIDER\app\Modules\Administracion\Resources\views\paquetes" />
       <recent name="E:\TRABAJOS\PROMOLIDER\app\Modules\Administracion\Resources\views\paquete" />
       <recent name="E:\TRABAJOS\PROMOLIDER\app\Modules\Autenticacion\Resources\views" />
-      <recent name="E:\TRABAJOS\PROMOLIDER\app\Modules\Administracion\Resources\views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\TRABAJOS\PROMOLIDER\app\Modules\Redbinaria\Resources\views\afiliado" />
     </key>
   </component>
   <component name="RunManager">
@@ -246,7 +241,10 @@
       <workItem from="1606836629915" duration="4696000" />
       <workItem from="1606843758468" duration="21580000" />
       <workItem from="1607098195148" duration="10604000" />
-      <workItem from="1607126181179" duration="13139000" />
+      <workItem from="1607126181179" duration="13334000" />
+      <workItem from="1607181816365" duration="205000" />
+      <workItem from="1607298236293" duration="1213000" />
+      <workItem from="1607353723062" duration="6568000" />
     </task>
     <task id="LOCAL-00001" summary="creacion arbol binario v1">
       <created>1605497033518</created>
@@ -255,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605497033518</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="creaear curso y mejora de actualizar paquete">
+      <created>1607144443881</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607144443881</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,7 +281,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="creacion arbol binario v1" />
     <MESSAGE value="crear un curso" />
-    <option name="LAST_COMMIT_MESSAGE" value="crear un curso" />
+    <MESSAGE value="creaear curso y mejora de actualizar paquete" />
+    <option name="LAST_COMMIT_MESSAGE" value="creaear curso y mejora de actualizar paquete" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="42" key="#Inspections" timestamp="1604796656687">
@@ -343,18 +349,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="905" height="210" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1606580193979" />
-    <state x="496" y="173" key="NewPhpClassDialog" timestamp="1607125006524">
+    <state x="496" y="173" key="NewPhpClassDialog" timestamp="1607356485275">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="496" y="173" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1607125006524" />
+    <state x="496" y="173" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1607356485275" />
     <state x="184" y="8" key="SettingsEditor" timestamp="1606508335318">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1606508335318" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1607058720357">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1607144452658">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607058720357" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607144452658" />
     <state x="565" y="248" width="316" height="246" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1606845500190">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

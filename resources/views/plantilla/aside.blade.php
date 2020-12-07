@@ -77,7 +77,7 @@
                 <ul class="nav flex-column sub-menu">
                     <li class="nav-item "> <a class="nav-link" href="{{route('paquete.index')}}">Paquete</a></li>
                     <li class="nav-item "> <a class="nav-link" href="{{route('curso.index')}}">Cursos</a></li>
-                    <li class="nav-item "> <a class="nav-link" href="{{route('curso.index')}}">Productos</a></li>
+                    <li class="nav-item "> <a class="nav-link" href="{{route('anuncio.index')}}">Anuncios</a></li>
                 </ul>
             </div>
         </li>

@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
+use Modules\Administracion\Entities\Anuncio;
 
 class DatabaseSeeder extends Seeder
 {
@@ -19,7 +20,7 @@ class DatabaseSeeder extends Seeder
          //   AfiliacionSeeder::class
         ]);
 
-        User::create([
+       /* User::create([
                 'nombre'            =>'Roy Carlos',
                 'apellido'          =>'Huayre Bujaico',
                 'identificacion'    =>'76044636',
@@ -30,5 +31,15 @@ class DatabaseSeeder extends Seeder
                 'usuario'           =>'admin',
                 'password'        =>Hash::make('admin')
         ]);
+       */
+        Anuncio::create([
+            'mensaje'=>'hola con todosmensaje 1',
+            'estado'=>true
+        ]);
+        Anuncio::create([
+            'mensaje'=>'hola con todosmensaje 2',
+            'estado'=>false
+        ]);
+
     }
 }

@@ -33,7 +33,7 @@
                                     <li><a href="typography.html">Short Codes</a></li>-->
                         <!--	</ul>
                       </li>--><li><a href="https://promolider.org/universidad/index.php" target="_blank">UNIVERSIDAD</a></li>
-                        <li><a href="https://www.promolider.org/sistema/login.php" target="_blank">INICIAR SESION</a></li>
+                        <li><a href="{{route('login')}}" target="_blank">INICIAR SESION</a></li>
                         <li><a href="{{ route('web::contacto.index') }}">Contacto</a></li>
                     </ul>
                 </nav>

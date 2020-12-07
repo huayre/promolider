@@ -1,5 +1,6 @@
 <?php
-
+use Illuminate\Support\Facades\Route;
+use Modules\Web\Http\Controllers\WebController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,6 +12,9 @@
 |
 */
 
-Route::prefix('web')->group(function() {
-    Route::get('/', 'WebController@index');
-});
+
+Route::get('/', [WebController::class, 'index'])->name('web::inicio.index');
+Route::get('/nosotros', [WebController::class,'nosotros'])->name('web::nosotros.index');
+Route::get('/productos', [WebController::class,'productos'])->name('web::productos.index');
+
+Route::get('/contacto', [WebController::class,'contacto'])->name('web::contacto.index');

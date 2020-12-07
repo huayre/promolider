@@ -14,16 +14,26 @@ class WebController extends Controller
      */
     public function index()
     {
-        return view('web::index');
+        return view('web::inicio.index');
     }
 
     /**
      * Show the form for creating a new resource.
      * @return Renderable
      */
-    public function create()
+    public function nosotros()
     {
-        return view('web::create');
+        return view('web::nosotros.index');
+    }
+
+    public function productos()
+    {
+        return view('web::productos.index');
+    }
+
+    public function contacto()
+    {
+        return view('web::contacto.index');
     }
 
     /**

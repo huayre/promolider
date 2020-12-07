@@ -19,17 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d974e5a9-f95e-4f4f-a6c6-84ed9d32ecce" name="Default Changelist" comment="creaear curso y mejora de actualizar paquete">
-      <change afterPath="$PROJECT_DIR$/Modules/Administracion/Entities/Anuncio.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Administracion/Repository/AnuncioRepositorio.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Administracion/Resources/views/anuncios/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Administracion/Service/AnuncioServicio.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c1c061ad-34cf-4882-9408-5362e1b7f626.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c1c061ad-34cf-4882-9408-5362e1b7f626.xml" afterDir="false" />
+    <list default="true" id="d974e5a9-f95e-4f4f-a6c6-84ed9d32ecce" name="Default Changelist" comment="listar e implementar estar estructura de anuncios">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Administracion/Routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Web/Resources/views/inicio/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Web/Resources/views/inicio/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/plantilla/aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/plantilla/aside.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +235,7 @@
       <workItem from="1607126181179" duration="13334000" />
       <workItem from="1607181816365" duration="205000" />
       <workItem from="1607298236293" duration="1213000" />
-      <workItem from="1607353723062" duration="6568000" />
+      <workItem from="1607353723062" duration="7856000" />
     </task>
     <task id="LOCAL-00001" summary="creacion arbol binario v1">
       <created>1605497033518</created>
@@ -260,7 +251,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607144443881</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="listar e implementar estar estructura de anuncios">
+      <created>1607361518267</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607361518267</updated>
+    </task>
+    <task id="LOCAL-00004" summary="listar e implementar estar estructura de anuncios">
+      <created>1607361582453</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607361582453</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +287,8 @@
     <MESSAGE value="creacion arbol binario v1" />
     <MESSAGE value="crear un curso" />
     <MESSAGE value="creaear curso y mejora de actualizar paquete" />
-    <option name="LAST_COMMIT_MESSAGE" value="creaear curso y mejora de actualizar paquete" />
+    <MESSAGE value="listar e implementar estar estructura de anuncios" />
+    <option name="LAST_COMMIT_MESSAGE" value="listar e implementar estar estructura de anuncios" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="42" key="#Inspections" timestamp="1604796656687">
@@ -357,10 +363,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1606508335318" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1607144452658">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1607361595518">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607144452658" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607361595518" />
     <state x="565" y="248" width="316" height="246" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1606845500190">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

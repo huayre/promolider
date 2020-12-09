@@ -1,6 +1,6 @@
-@extends('plantilla.index')
+@extends('redbinaria::oficina.plantilla')
 @section('contenido')
-    <div>
+    <div class="container mt-4">
         <form action="{{route('guardarregistro')}}" method="post">
             @csrf
             <div class="row">
@@ -565,14 +565,20 @@
                             <input type="password" class="form-control border-primary " name="password_confirmation">
 
                         </div>
-                        <input type="hidden"  name="idNodoPadre" value="{{Auth::id()}}">
+                        <input type="hidden" name="idNodoPadre" value="{{$datosPatrocinante->id}}">
+
+                        @if($rama==1)
+                        <input type="hidden" name="orden" value="1">
+                        @elseif($rama==2)
+                        <input type="hidden" name="orden" value="2">
+                        @endif
 
                     </div>
                     <div class="card-header" style="background-color: #27AE60">
                         <h4 class="text-center text-light">Referidor / Patrocinante</h4>
                     </div>
                     <div class="card-body ">
-                        <input type="text" class="form-control" disabled value="Patrocinador">
+                        <input type="text" class="form-control text-capitalize" disabled value="{{$datosPatrocinante->nombre.' '.$datosPatrocinante->apellido}}">
                     </div>
 
                 </div>
@@ -584,45 +590,17 @@
                         <div class="form-group">
                             <select class="form-control border-primary" >
                                 <option value="">Seleccione un tipo de cuenta</option>
-                                <option value="1">School</option>
-                                <option value="2">Academy</option>
-                                <option value="3">University</option>
-                                <option value="4">Participante</option>
+                               @foreach($listaPaquetes as $paquete)
+                                 <option class="text-uppercase">{{$paquete->nombre}}</option>
+                               @endforeach
                             </select>
-                        </div>
-                        <div class="form-group bg-dark p-2 text-light">
-                            <div class="form-radio">
-                                <label class="form-check-label">
-                                    <input type="radio" class="form-check-input text-primary" name="orden" id="optionsRadios2" value="1">
-                                    Registro Izquierda
-                                </label>
-                            </div>
-                            <div class="form-radio">
-                                <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" name="orden" id="optionsRadios1" value="2" checked="">
-                                    Registro Derecha
-                                </label>
-                            </div>
                         </div>
                     </div>
 
                 </div>
             </div>
-           <button type="submit" class="btn btn-primary my-5 btn-block p-2">REGISTRAR NUEVO AFILIADO</button>
+            <button type="submit" class="btn btn-primary my-5 btn-block p-2">REGISTRAR NUEVO AFILIADO</button>
         </form>
     </div>
 
-    <button type="button" onclick="MenssajeConfirmacion()" >OK</button>
-@endsection
-@section('script')
-    <script>
-        function MenssajeConfirmacion()
-        {
-            Swal.fire(
-                'The Internet?',
-                'That thing is still around?',
-                'question'
-            )
-        }
-    </script>
 @endsection

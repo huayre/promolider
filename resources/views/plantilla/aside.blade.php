@@ -61,9 +61,7 @@
             </a>
             <div class="collapse" id="oficina-virtual">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item "> <a class="nav-link" href="#">Mi Oficina</a></li>
-                    <li class="nav-item "> <a class="nav-link" href="#">Productos</a></li>
-                    <li class="nav-item "> <a class="nav-link" href="#">Productos</a></li>
+                    <li class="nav-item "> <a class="nav-link" href="{{route('mi_oficina')}}">Mi Oficina</a></li>
                 </ul>
             </div>
         </li>
@@ -75,8 +73,9 @@
             </a>
             <div class="collapse" id="administracion">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item "> <a class="nav-link" href="{{route('paquete.index')}}">Paquete</a></li>
+                    <li class="nav-item "> <a class="nav-link" href="{{route('paquete.index')}}">Paquetes</a></li>
                     <li class="nav-item "> <a class="nav-link" href="{{route('curso.index')}}">Cursos</a></li>
+                    <li class="nav-item "> <a class="nav-link" href="#">Reconsumos</a></li>
                     <li class="nav-item "> <a class="nav-link" href="{{route('anuncio.index')}}">Anuncios</a></li>
                 </ul>
             </div>

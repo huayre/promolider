@@ -13,7 +13,7 @@
 
         }
     </style>
-    <div class="tf-tree example bg-google">
+    <div class="tf-tree example table-primary p-3 d-flex justify-content-center">
         <ul>
             @foreach($nodopadre as $nodo)
                 @if($nodo)

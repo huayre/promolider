@@ -1,26 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d974e5a9-f95e-4f4f-a6c6-84ed9d32ecce" name="Default Changelist" comment="listar e implementar estar estructura de anuncios">
+      <change afterPath="$PROJECT_DIR$/Modules/Administracion/Entities/Reconsumo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Administracion/Repository/RepositorioReconsumo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Administracion/Service/ServicioReconsumo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Redbinaria/Http/Controllers/OficinaController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Redbinaria/Resources/views/oficina/cursos.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Redbinaria/Resources/views/oficina/detalle_curso.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Redbinaria/Resources/views/oficina/inicio.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Redbinaria/Resources/views/oficina/oficina.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Redbinaria/Resources/views/oficina/plantilla.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Redbinaria/Resources/views/oficina/registro.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Redbinaria/Service/ServicioOficina.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Entities/Curso.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Administracion/Entities/Curso.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Repository/RepositorioCurso.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Administracion/Repository/RepositorioCurso.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Redbinaria/Entities/Rderecha.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Redbinaria/Entities/Rizquierda.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Redbinaria/Resources/views/afiliado/nuevo.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Redbinaria/Resources/views/afiliado/nuevo.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Redbinaria/Resources/views/arbolbinario/mapa.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Redbinaria/Resources/views/arbolbinario/mapa.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Redbinaria/Routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Redbinaria/Routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Redbinaria/Service/ServicioAfiliado.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Redbinaria/Service/ServicioAfiliado.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/plantilla/aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/plantilla/aside.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,19 +182,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Modules/Administracion/Resources/views/anuncios" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Modules/Redbinaria/Resources/views/oficina" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\TRABAJOS\PROMOLIDER\app\Modules\Redbinaria\Resources\views\oficina" />
       <recent name="E:\TRABAJOS\PROMOLIDER\app\Modules\Administracion\Resources\views\anuncios" />
       <recent name="E:\TRABAJOS\PROMOLIDER\app\Modules\Administracion\Http\Requests" />
       <recent name="E:\TRABAJOS\PROMOLIDER\app\Modules\Administracion\Resources\views\paquetes" />
       <recent name="E:\TRABAJOS\PROMOLIDER\app\Modules\Administracion\Resources\views\paquete" />
-      <recent name="E:\TRABAJOS\PROMOLIDER\app\Modules\Autenticacion\Resources\views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\TRABAJOS\PROMOLIDER\app\Modules\Redbinaria\Resources\views\afiliado" />
@@ -235,7 +256,10 @@
       <workItem from="1607126181179" duration="13334000" />
       <workItem from="1607181816365" duration="205000" />
       <workItem from="1607298236293" duration="1213000" />
-      <workItem from="1607353723062" duration="7856000" />
+      <workItem from="1607353723062" duration="11353000" />
+      <workItem from="1607379767005" duration="18898000" />
+      <workItem from="1607439736697" duration="27276000" />
+      <workItem from="1607524510330" duration="5137000" />
     </task>
     <task id="LOCAL-00001" summary="creacion arbol binario v1">
       <created>1605497033518</created>
@@ -265,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607361582453</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="listar e implementar estar estructura de anuncios">
+      <created>1607365616580</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1607365616580</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,10 +346,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1606854684454" />
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607127531803">
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607446016686">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1607127531803" />
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1607446016686" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1606456640117">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -355,25 +386,33 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="905" height="210" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1606580193979" />
-    <state x="496" y="173" key="NewPhpClassDialog" timestamp="1607356485275">
+    <state x="496" y="173" key="NewPhpClassDialog" timestamp="1607533558216">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="496" y="173" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1607356485275" />
-    <state x="184" y="8" key="SettingsEditor" timestamp="1606508335318">
+    <state x="496" y="173" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1607533558216" />
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1607470339413">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1606508335318" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1607361595518">
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1607470339413" />
+    <state x="184" y="8" key="SettingsEditor" timestamp="1607385178216">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607361595518" />
+    <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1607385178216" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1607365634876">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607365634876" />
     <state x="565" y="248" width="316" height="246" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1606845500190">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="565" y="248" width="316" height="246" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.728@0.0.1366.728" timestamp="1606845500190" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1606457543604">
+    <state x="339" y="162" key="run.anything.popup" timestamp="1607396983891">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1606457543604" />
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1607396983891" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1607444775925">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1607444775925" />
   </component>
 </project>

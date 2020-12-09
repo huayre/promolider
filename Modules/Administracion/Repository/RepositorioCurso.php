@@ -28,4 +28,14 @@ class RepositorioCurso
            'contenido'  =>$capacidad
        ]);
     }
+
+    public function buscarCurso($idCurso)
+    {
+        return Curso::find($idCurso);
+    }
+
+    public function listaCursoOficina()
+    {
+        return Curso::paginate(12);
+    }
 }

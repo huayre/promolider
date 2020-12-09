@@ -17,7 +17,7 @@ class ServicioAfiliado
 
     public function crearNuevoAfiliado($datosUsuario)
     {
-       if ($this->RepositorioAfiliado->esNodoRaiz($datosUsuario->usuarioId))
+       if ($this->RepositorioAfiliado->esNodoRaiz($datosUsuario->idNodoPadre))
        {
          return  $this->crearNodosHijosDeRaiz($datosUsuario);
        }
@@ -25,8 +25,6 @@ class ServicioAfiliado
        {
            return $this->crearNodosHijosDeNodoPadre($datosUsuario);
        }
-
-
     }
 
 
@@ -35,17 +33,17 @@ class ServicioAfiliado
     {
         $estado = true;
 
-        if ($datosUsuario->orden==1 && $this->RepositorioAfiliado->existeNodoHijoIzquierdo($datosUsuario->usuarioId)==false)
+        if ($datosUsuario->orden==1 && $this->RepositorioAfiliado->existeNodoHijoIzquierdo($datosUsuario->idNodoPadre)==false)
         {
             $nodoHijoRegistrado=$this->RepositorioAfiliado->crearNodoHijo($datosUsuario);
-            $this->RepositorioAfiliado->EnlazarNodoHijoConNodoPadre($datosUsuario->usuarioId,$nodoHijoRegistrado);
+            $this->RepositorioAfiliado->EnlazarNodoHijoConNodoPadre($datosUsuario->idNodoPadre,$nodoHijoRegistrado);
 
         }
         else{
-            if ($datosUsuario->orden==2 && $this->RepositorioAfiliado->existeNodoHijoDerecho($datosUsuario->usuarioId)==false)
+            if ($datosUsuario->orden==2 && $this->RepositorioAfiliado->existeNodoHijoDerecho($datosUsuario->idNodoPadre)==false)
             {
                 $nodoHijoRegistrado=$this->RepositorioAfiliado->crearNodoHijo($datosUsuario);
-                $this->RepositorioAfiliado->EnlazarNodoHijoConNodoPadre($datosUsuario->usuarioId,$nodoHijoRegistrado);
+                $this->RepositorioAfiliado->EnlazarNodoHijoConNodoPadre($datosUsuario->idNodoPadre,$nodoHijoRegistrado);
 
             }
             else{

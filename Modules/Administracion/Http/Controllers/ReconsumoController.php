@@ -2,19 +2,30 @@
 
 namespace Modules\Administracion\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
-use Illuminate\Routing\Controller;
+use Modules\Administracion\Entities\Reconsumo;
+use Modules\Administracion\Http\Requests\ActualizarReconsumoRequest;
+use Modules\Administracion\Http\Requests\CrearReconsumoRequest;
+use Modules\Administracion\Service\ServicioReconsumo;
 
 class ReconsumoController extends Controller
 {
+    private $ServicioReconsumo;
+
+    public function __construct(ServicioReconsumo $ServicioReconsumo)
+    {
+        $this->ServicioReconsumo = $ServicioReconsumo;
+    }
     /**
      * Display a listing of the resource.
      * @return Renderable
      */
     public function index()
     {
-        return view('administracion::index');
+        $listaReconsumos=$this->ServicioReconsumo->listadoReconsumo();
+        return View('administracion::reconsumos.index')->with(['listaReconsumos'=>$listaReconsumos]);
     }
 
     /**
@@ -23,7 +34,7 @@ class ReconsumoController extends Controller
      */
     public function create()
     {
-        return view('administracion::create');
+        return view('administracion::reconsumos.crear');
     }
 
     /**
@@ -31,9 +42,12 @@ class ReconsumoController extends Controller
      * @param Request $request
      * @return Renderable
      */
-    public function store(Request $request)
+    public function store(CrearReconsumoRequest $request)
     {
-        //
+        $this->ServicioReconsumo->crearReconsumo($request);
+        toastr()->success('Reconsumo creado Correctamente...!!', 'MENSAJE');
+
+        return redirect()->route('reconsumo.index');
     }
 
     /**
@@ -53,7 +67,9 @@ class ReconsumoController extends Controller
      */
     public function edit($id)
     {
-        return view('administracion::edit');
+        $reconsumo = Reconsumo::findOrFail($id);
+
+        return view('administracion::reconsumos.editar')->with(['reconsumo' =>$reconsumo]);
     }
 
     /**
@@ -62,9 +78,12 @@ class ReconsumoController extends Controller
      * @param int $id
      * @return Renderable
      */
-    public function update(Request $request, $id)
+    public function update(ActualizarReconsumoRequest $request, $id)
     {
-        //
+        $this->ServicioReconsumo->editarReconsumo($request, $id);
+        toastr()->success('Reconsumo editado correctamente...!!!','MENSAJE');
+
+        return redirect()->route('reconsumo.index');
     }
 
     /**
@@ -74,6 +93,8 @@ class ReconsumoController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $this->ServicioReconsumo->eliminarReconsumo($id);
+        toastr()->success('Reconsumo eliminado Correctamente...!!', 'MENSAJE');
+        return redirect()->route('reconsumo.index');
     }
 }

@@ -18,30 +18,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d974e5a9-f95e-4f4f-a6c6-84ed9d32ecce" name="Default Changelist" comment="listar e implementar estar estructura de anuncios">
-      <change afterPath="$PROJECT_DIR$/Modules/Administracion/Entities/Reconsumo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Administracion/Repository/RepositorioReconsumo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Administracion/Service/ServicioReconsumo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Redbinaria/Http/Controllers/OficinaController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Redbinaria/Resources/views/oficina/cursos.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Redbinaria/Resources/views/oficina/detalle_curso.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Redbinaria/Resources/views/oficina/inicio.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Redbinaria/Resources/views/oficina/oficina.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Redbinaria/Resources/views/oficina/plantilla.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Redbinaria/Resources/views/oficina/registro.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Redbinaria/Service/ServicioOficina.php" afterDir="false" />
+    <list default="true" id="d974e5a9-f95e-4f4f-a6c6-84ed9d32ecce" name="Default Changelist" comment="implementacion de oficina virtual">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c1c061ad-34cf-4882-9408-5362e1b7f626.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c1c061ad-34cf-4882-9408-5362e1b7f626.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Entities/Curso.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Administracion/Entities/Curso.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Repository/RepositorioCurso.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Administracion/Repository/RepositorioCurso.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Redbinaria/Entities/Rderecha.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Redbinaria/Entities/Rizquierda.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Redbinaria/Resources/views/afiliado/nuevo.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Redbinaria/Resources/views/afiliado/nuevo.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Redbinaria/Resources/views/arbolbinario/mapa.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Redbinaria/Resources/views/arbolbinario/mapa.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Redbinaria/Routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Redbinaria/Routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Redbinaria/Service/ServicioAfiliado.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Redbinaria/Service/ServicioAfiliado.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/plantilla/aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/plantilla/aside.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Administracion/Service/CursoServicio.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Administracion/Service/CursoServicio.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +162,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Modules/Redbinaria/Resources/views/oficina" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
@@ -259,7 +239,14 @@
       <workItem from="1607353723062" duration="11353000" />
       <workItem from="1607379767005" duration="18898000" />
       <workItem from="1607439736697" duration="27276000" />
-      <workItem from="1607524510330" duration="5137000" />
+      <workItem from="1607524510330" duration="6302000" />
+      <workItem from="1607552430807" duration="1705000" />
+      <workItem from="1607570032157" duration="136000" />
+      <workItem from="1607695919884" duration="73000" />
+      <workItem from="1607798376002" duration="621000" />
+      <workItem from="1608042012149" duration="911000" />
+      <workItem from="1608058690958" duration="53000" />
+      <workItem from="1608135204911" duration="596000" />
     </task>
     <task id="LOCAL-00001" summary="creacion arbol binario v1">
       <created>1605497033518</created>
@@ -296,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607365616580</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="implementacion de oficina virtual">
+      <created>1607546374872</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607546374872</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,7 +313,8 @@
     <MESSAGE value="crear un curso" />
     <MESSAGE value="creaear curso y mejora de actualizar paquete" />
     <MESSAGE value="listar e implementar estar estructura de anuncios" />
-    <option name="LAST_COMMIT_MESSAGE" value="listar e implementar estar estructura de anuncios" />
+    <MESSAGE value="implementacion de oficina virtual" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementacion de oficina virtual" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="42" key="#Inspections" timestamp="1604796656687">
@@ -398,10 +393,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1607385178216" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1607365634876">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1607546523363">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607365634876" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607546523363" />
     <state x="565" y="248" width="316" height="246" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1606845500190">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

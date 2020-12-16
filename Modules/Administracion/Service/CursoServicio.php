@@ -35,7 +35,7 @@ class CursoServicio
                 'precio_venta'             =>$datosCurso->precio_venta,
                 'iva'                      =>$datosCurso->iva,
                 'porcentaje_comisionable'  =>$datosCurso->porcentaje_comisionable,
-                'valor_comisionable'       =>$datosCurso->precio_venta*$datosCurso->porcentaje_comisionable
+                'valor_comisionable'       =>$datosCurso->precio_venta*($datosCurso->porcentaje_comisionable/100)
             ];
         }
         //crear curso
